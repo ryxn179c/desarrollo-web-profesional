@@ -1,8 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 
-module.exports = {
+module.exports = defineConfig({
   publicPath: process.env.NODE_ENV === 'production'
     ? '/desarrollo-web-profesional/'
     : '/',
-    productionSourceMap: false,
-};
+  productionSourceMap: false,
+});
